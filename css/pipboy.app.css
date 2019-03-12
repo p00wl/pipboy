@@ -188,7 +188,7 @@ center-image{
      height: 10px;
      border: 2px solid;
      display: inline-block;
-     width: 70%;
+     width: 80%;
  }
 
  .level-progress-indicator{
@@ -213,9 +213,14 @@ center-image{
     padding-right: 10px;
     padding-left: 10px;
  }
+ .row{
+     font-size: 22px;
+ }
 
  .row.ftmobile{
     margin-right: -10px !important;
+    font-size: 16px;
+    
  }
 
  .status-bar{
