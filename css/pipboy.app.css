@@ -4,6 +4,10 @@
     src: url(../monofonto.ttf);
 }
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
 body{
     font-family: Pipboy, sans-serif;
     color: #14fe17;
@@ -21,6 +25,31 @@ body::after{
     z-index: 1000000;
     pointer-events: none;
 }
+@media (max-width:629px) {
+    #optionalstuff {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #title_message {
+      display:none;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+  }
+
+#mobileshow { 
+display:none; 
+}
+@media screen and (max-width: 500px) {
+#mobileshow { 
+display:block; }
+}
+
+
 
 .navbar-nav.nav-fill{
     margin: 0 10%;
@@ -128,6 +157,11 @@ center-image{
     width: 100%;
 }
 
+@media screen and (max-width: 678px){
+    nav.pip-footer{
+      display: none;
+    }
+  }
 .pip-footer{
     position: fixed;
     bottom: 0%;
@@ -208,9 +242,15 @@ center-image{
 
 div.row.stat-numbers{
     width:80%;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 .stat-numbers img #energy{
     width: 50%;
     border: none;
 }
+
+@media screen and (max-width: 678px){
+    div.row.stat-numbers{
+      display: none;
+    }
+  }
