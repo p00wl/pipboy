@@ -21,6 +21,10 @@ body::after{
     z-index: 1000000;
     pointer-events: none;
 }
+
+.navbar-nav.nav-fill{
+    margin: 0 10%;
+}
 .navbar.navbar-light{
     border-bottom: 2px solid;
     margin: 0px 10px
@@ -109,14 +113,19 @@ ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
     padding: 0 20px;
 }
 .center-image img{
-    margin: auto;
-    display: block;
-    position: relative;
+  border: 2px solid;
     max-height: 300px;
-    margin-top: 100px;
-    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(0.9);
+    margin-top: 5%;
+ /* filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(0.9);*/
+}
+.text-image{
+    margin-top: 8%;
+}
 
-
+center-image{
+    position: absolute;
+    margin: auto;
+    width: 100%;
 }
 
 .pip-footer{
