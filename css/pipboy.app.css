@@ -9,19 +9,31 @@ body{
     color: #14fe17;
     background: #272b23;
 }
+body::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,0.4) 1px, transparent 2px, transparent 2px);
+    opacity: .4;
+    z-index: 1000000;
+    pointer-events: none;
+}
 .navbar{
     border-bottom: 2px solid;
     margin: 0px 10px
 }
 .navbar::before, .navbar::after{
-    height: 5px;
+    height: 7px;
     width: 2px;
     content: "";
     position: absolute;
     display: block;
     z-index: 5000;
     background: #14fe17;
-    bottom: -6px;
+    bottom: -8px;
 }
 .navbar::before{
     left: 0px;
@@ -34,6 +46,19 @@ body{
 
 ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
     color: #14fe17 !important;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+.navbar-nav{
+    width: 100%;
+}
+.navbar-light ul.navbar-nav > li{
+    display: block;
+    position: relative;
+    width: 100%;
 }
 .center-image img{
     margin: auto;
