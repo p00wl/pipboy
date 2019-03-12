@@ -9,6 +9,29 @@ body{
     color: #14fe17;
     background: #272b23;
 }
+.navbar{
+    border-bottom: 2px solid;
+    margin: 0px 10px
+}
+.navbar::before, .navbar::after{
+    height: 5px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 5000;
+    background: #14fe17;
+    bottom: -6px;
+}
+.navbar::before{
+    left: 0px;
+}
+
+.navbar::after{
+    right: 0px;
+}
+
+
 ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
     color: #14fe17 !important;
 }
