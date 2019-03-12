@@ -105,8 +105,8 @@ ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
 
 }
 .nav.nav-tabs{
-    
-    margin: 20px;
+    margin-bottom:20px; 
+    margin-top: 20px;
     border-bottom: none; 
 }
 .nav.nav-tabs > .nav-item >.nav-link:hover,
