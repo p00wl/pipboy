@@ -119,11 +119,12 @@ ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
 }
 .nav.nav-tabs > .nav-item >.nav-link:hover,
 .nav.nav-tabs > .nav-item >.nav-link{
-    border: none;
+    
     background: none;
     font-size: 26px;
     padding: 5px 10px;
 }
+
 
 
 .nav.nav-tabs > .nav-item:nth-child(1){
@@ -494,3 +495,43 @@ div.row.stat-numbers{
     margin-top: -30%;
     
   }
+
+  /*Fim radar*/
+
+
+
+
+.nav-link{
+  position: relative;
+}
+
+.nav-link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #14fe17;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+ 
+.nav-link:hover:after{
+  width: 80%;
+  left: 10%;
+  background: #14fe17;
+}
+
+
+
+.nav.nav-tabs > .nav-item >.nav-link.active{
+border-color: transparent  transparent #14fe17;
+border-width: 3px;
+opacity: 1 !important;
+background: none;
+}
+
+.nav.nav-tabs > .nav-item >.nav-link:hover{
+  border-color: transparent transparent; 
+}
