@@ -365,7 +365,6 @@ div.row.stat-numbers{
     height: 200px;
     border-radius: 50%;
     border: 4px solid #14fe17;
-    background: #000000 ;
     background-size: cover;
     box-shadow: 0 2px 1px #14fe17, inset 0 0 100px rgba(20, 254, 23, 0.75);
     overflow: hidden;
