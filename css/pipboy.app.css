@@ -150,7 +150,7 @@ ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
   border: 2px solid;
     max-height: 300px;
     margin-top: 5%;
- /* filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(0.9);*/
+  filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1) contrast(0.7);
 }
 .text-image{
     margin-top: 8%;
@@ -282,4 +282,7 @@ div.row.stat-numbers{
     div.row.stat-numbers{
       display: none;
     }
+  }
+  img.img-responsive{
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1) contrast(0.9);
   }
