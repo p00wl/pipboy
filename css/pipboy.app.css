@@ -12,6 +12,8 @@ body{
     font-family: Pipboy, sans-serif;
     color: #14fe17;
     background: #272b23;
+    text-shadow: 0rem 0.05rem 0.5rem rgba(20, 254, 23, 0.75);
+    letter-spacing: 0.05em;
 }
 body::after{
     height: 100%;
@@ -92,7 +94,8 @@ ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
     z-index: 50;
     position: relative;
     background: #272b23;
-       
+    text-shadow: 0rem 0.1rem 1rem rgba(20, 254, 23, 0.75);
+    letter-spacing: 0.05em;
 }
 
 .navbar-item.active::before{
@@ -271,7 +274,7 @@ center-image{
 
 div.row.stat-numbers{
     width:80%;
-    margin-top: 20%;
+    margin-top: 50%;
 }
 .stat-numbers img #energy{
     width: 50%;
@@ -285,4 +288,205 @@ div.row.stat-numbers{
   }
   img.img-responsive{
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1) contrast(0.9);
+  }
+
+/*Scanlines*/
+
+
+  
+  @keyframes crt-blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    50.1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    color: rgba(20, 254, 23, 1);
+    text-shadow: 0rem 0.1rem 1rem rgba(20, 254, 23, 0.75);
+    letter-spacing: 0.05em;
+    
+  }
+  h1::selection {
+    color: #fff;
+    background: rgba(20, 254, 23, 1);
+  }
+  h1::-moz-selection {
+    color: #fff;
+    background: rgba(20, 254, 23, 1);
+  }
+  h1 span::selection {
+    color: #fff;
+    background: rgba(20, 254, 23, 1);
+  }
+  h1 span::-moz-selection {
+    color: #fff;
+    background: rgba(20, 254, 23, 1);
+  }
+
+
+  
+  h2 {
+    color: rgba(239, 253, 255, 1);
+    text-shadow: 0rem 0.1rem 1rem rgba(239, 253, 255, 0.95);
+    letter-spacing: 0.0em;
+    
+  }
+  h2::selection {
+    color: #111;
+    background: rgba(239, 253, 255, 1);
+  }
+  h2::-moz-selection {
+    color: #111;
+    background: rgba(239, 253, 255, 1);
+  }
+  
+
+
+
+  /* Radar */
+
+  
+.radar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #14fe17;
+    background: #000000 ;
+    background-size: cover;
+    box-shadow: 0 2px 1px #14fe17, inset 0 0 100px rgba(20, 254, 23, 0.75);
+    overflow: hidden;
+  }
+  
+  .radar:before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    width: 10px;
+    height: 10px;
+    background: #00ff00;
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: glow 1s linear infinite;
+  }
+  
+  .radar:after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    background: #00ff00;
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: glow 1s linear infinite;
+  }
+  
+  .radar li:nth-child(1),
+  .radar li:nth-child(2),
+  .radar li:nth-child(3),
+  .radar li:nth-child(4) {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background: rgba(0,255,0,1);
+  }
+  
+  .radar li:nth-child(2) {
+    transform: rotate(90deg);
+  }
+  
+  .radar li:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  
+  .radar li:nth-child(4) {
+    transform: rotate(-45deg);
+  }
+  
+  .radar li:nth-child(5),
+  .radar li:nth-child(6),
+  .radar li:nth-child(7) {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgba(0,255,0,1);
+    background: transparent;
+    border-radius: 50%;
+  }
+  
+  .radar li:nth-child(5) {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .radar li:nth-child(6) {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .radar li:nth-child(7) {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .radar li:nth-child(8) {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 97px;
+    height: 97px;
+    transform-origin: top left;
+    background: linear-gradient(45deg, #00ff00 0%, transparent 50%);
+    animation: animate 2s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #radar{
+    margin-left: 550px;
+    margin-top: -30%;
+    
   }
