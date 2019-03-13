@@ -14,7 +14,7 @@ body{
     background: #272b23;
 }
 body::after{
-    height: 105%;
+    height: 100%;
     width: 100%;
     content: "";
     position: absolute;
