@@ -124,6 +124,11 @@ ul li.nav-item a.nav-link, ul li.navbar-item.active a.nav-link{
     font-size: 26px;
     padding: 5px 10px;
 }
+
+
+.nav.nav-tabs > .nav-item:nth-child(1){
+  opacity: 1;
+}
 .nav.nav-tabs > .nav-item:nth-child(2){
     opacity: 0.5;
 }
@@ -225,7 +230,7 @@ center-image{
 
  .row.ftmobile{
     margin-right: -10px !important;
-    font-size: 16px;
+    font-size: 13px;
     
  }
 
