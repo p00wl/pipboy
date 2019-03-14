@@ -41,6 +41,10 @@ body::after{
       width: 28%;
       display: none;
     }
+    h1#hero.mobileshow {
+      display:none;
+    
+    }
   }
 
 #mobileshow { 
@@ -49,6 +53,18 @@ display:none;
 @media screen and (max-width: 500px) {
 #mobileshow { 
 display:block; }
+.mobileshow{
+  display: block;
+}
+}
+h1#hero{
+  margin-top: 10%;
+  font-size: 2.5rem !important;
+}
+
+h1#hero.mobileshow{
+  margin-top: 10%;
+  font-size: 2rem !important;
 }
 
 h1#mobileshow{
@@ -243,8 +259,10 @@ center-image{
      background: rgba(0, 255, 20, 0.1);
  }
  .statusid{
-    margin-top: 50px;
+   margin-left: 10%;
+    margin-top: 45%;
     max-width: 400px;
+    position: absolute;
  }
  .status-bar > .row{
      margin-bottom: 100px;
@@ -279,8 +297,10 @@ center-image{
 }
 
 div.row.stat-numbers{
-    width:80%;
+    width:52%;
     margin-top: 50%;
+    margin-left: 5%;
+    position: absolute;
 }
 .stat-numbers img #energy{
     width: 50%;
@@ -492,8 +512,12 @@ div.row.stat-numbers{
   
   #radar{
     margin-left: 550px;
-    margin-top: -30%;
+    position: absolute;
+    margin-top: 20%;
     
+  }
+  .col{
+    position: absolute;
   }
 
   /*Fim radar*/
@@ -535,3 +559,11 @@ background: none;
 .nav.nav-tabs > .nav-item >.nav-link:hover{
   border-color: transparent transparent; 
 }
+
+
+em{
+  background: rgba(0, 255, 20, 0.1);
+  color: #fff;
+}
+
+

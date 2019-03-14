@@ -18,6 +18,7 @@ var Typer = function(element) {
   this.doTyping();
 };
 
+
 Typer.prototype.start = function() {
   if (!this.typing) {
     this.typing = true;
